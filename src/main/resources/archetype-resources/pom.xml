@@ -11,7 +11,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mainClass>com.dita.dev.javafxdemo.MainApp</mainClass>
+        <mainClass>${groupId}.${artifactId}.App</mainClass>
     </properties>
 
     <organization>
