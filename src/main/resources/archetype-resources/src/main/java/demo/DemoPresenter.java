@@ -8,8 +8,6 @@ import java.util.ResourceBundle;
 
 import org.apache.log4j.Logger;
 
-import com.musicboost.spotify.Bus;
-
 import ${package}.Bus;
 import ${package}.Events;
 

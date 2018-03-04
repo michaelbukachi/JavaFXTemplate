@@ -5,8 +5,6 @@ package ${package};
 
 
 import com.airhacks.afterburner.injection.Injector;
-import com.musicboost.spotify.Bus;
-import com.musicboost.spotify.Events;
 
 import ${package}.demo.DemoView;
 import java.net.CookieHandler;
