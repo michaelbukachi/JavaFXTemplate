@@ -5,6 +5,9 @@ package ${package};
 
 
 import com.airhacks.afterburner.injection.Injector;
+import com.musicboost.spotify.Bus;
+import com.musicboost.spotify.Events;
+
 import ${package}.demo.DemoView;
 import java.net.CookieHandler;
 import java.net.CookiePolicy;
@@ -28,7 +31,10 @@ public class App extends Application {
         
         stage.setScene(scene);
         stage.setOnShown((WindowEvent event) -> {
-            Bus.getInstance().post(new Object()).now();
+            Bus.getInstance().post(new Events.Init()).now();
+        });
+        stage.setOnCloseRequest((WindowEvent event) -> {
+            Bus.getInstance().post(new Events.Close()).now();
         });
         stage.show();
     }

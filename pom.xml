@@ -4,7 +4,7 @@
 
   <groupId>com.dita.dev</groupId>
   <artifactId>javafxtemplate</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>maven-archetype</packaging>
 
   <name>javafxtemplate</name>
